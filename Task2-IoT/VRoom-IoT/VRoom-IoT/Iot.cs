@@ -47,13 +47,13 @@ public class Iot
 
         try
         {
-            Console.WriteLine($"Sending session status to server... " +
+            Console.WriteLine($"Sending room data to server... " +
                               $"\n\tTemperature: {(_localization == "us" ? requestBody.TemperatureF : requestBody.TemperatureC)}" +
                               $"\n\tHumidity: {requestBody.Humidity}" +
                               $"\n\tTimeStamp: {requestBody.TimeStamp}" +
                               $"\n");
        
-            var response = await httpClient.PostAsync($"{BaseUrl}/Session/SendSessionStatusata", content);
+            var response = await httpClient.PostAsync($"{BaseUrl}/IoT/SendIoTData", content);
             
             if (response.IsSuccessStatusCode)
             {
@@ -63,13 +63,13 @@ public class Iot
             }
             else
             {
-                Console.WriteLine($"SendSessionStatus failed. Status code: {response.StatusCode}");
+                Console.WriteLine($"SendIoTData failed. Status code: {response.StatusCode}");
                 return string.Empty; 
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"An error occurred during SendSessionStatus: {ex.Message}");
+            Console.WriteLine($"An error occurred during SendIoTData: {ex.Message}");
             return string.Empty; 
         }
     }
