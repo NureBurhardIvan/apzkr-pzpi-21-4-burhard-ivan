@@ -10,4 +10,5 @@ public interface IServiceRepository
     public Task<ServiceGotDto> Create(CreateServiceDto createHotelDto);
     
     public Task<List<ServiceGotDto>> GetAll();
+    public Task<ServiceGotDto> Update(UpdateServiceDto updateServiceDto);
 }

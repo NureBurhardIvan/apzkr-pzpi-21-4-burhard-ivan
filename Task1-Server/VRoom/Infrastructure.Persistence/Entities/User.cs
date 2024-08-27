@@ -1,4 +1,6 @@
-﻿namespace Infrastructure.Persistence.Entities;
+﻿using Infrastructure.Persistence.Enums;
+
+namespace Infrastructure.Persistence.Entities;
 
 public class User
 {

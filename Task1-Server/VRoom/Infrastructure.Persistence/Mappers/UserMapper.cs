@@ -1,6 +1,7 @@
 ﻿using Application.User.DTOs.RequestDTOs;
 using Application.User.DTOs.ResponseDTOs;
 using Infrastructure.Persistence.Entities;
+using Infrastructure.Persistence.Enums;
 using Riok.Mapperly.Abstractions;
 
 namespace Infrastructure.Persistence.Mappers;

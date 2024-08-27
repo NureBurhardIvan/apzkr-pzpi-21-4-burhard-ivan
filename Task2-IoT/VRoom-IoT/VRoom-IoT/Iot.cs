@@ -53,7 +53,7 @@ public class Iot
                               $"\n\tTimeStamp: {requestBody.TimeStamp}" +
                               $"\n");
        
-            var response = await httpClient.PostAsync($"{BaseUrl}/IoT/SendIoTData", content);
+            var response = await httpClient.PostAsync($"{BaseUrl}/IoT/SendData", content);
             
             if (response.IsSuccessStatusCode)
             {

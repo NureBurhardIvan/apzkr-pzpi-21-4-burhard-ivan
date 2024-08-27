@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRoom-IoT", "VRoom-IoT\VRoom-IoT.csproj", "{F4D8657E-B016-40A0-B6E2-7FBAD20C2202}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRoom-IoT", "VRoom-IoT\VRoom-IoT.csproj", "{72B6CFE3-9BE1-41A7-84B2-1397BB9131DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4D8657E-B016-40A0-B6E2-7FBAD20C2202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4D8657E-B016-40A0-B6E2-7FBAD20C2202}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4D8657E-B016-40A0-B6E2-7FBAD20C2202}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4D8657E-B016-40A0-B6E2-7FBAD20C2202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B6CFE3-9BE1-41A7-84B2-1397BB9131DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B6CFE3-9BE1-41A7-84B2-1397BB9131DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B6CFE3-9BE1-41A7-84B2-1397BB9131DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B6CFE3-9BE1-41A7-84B2-1397BB9131DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

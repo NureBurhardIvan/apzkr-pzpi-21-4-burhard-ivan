@@ -10,4 +10,6 @@ public static partial class ServiceMapper
 {
     public static partial Service CreateServiceToService(this CreateServiceDto source);
     public static partial ServiceGotDto ServiceToServiceGot(this Service source);
+    
+    public static partial Service UpdateServiceToService(this UpdateServiceDto source);
 }

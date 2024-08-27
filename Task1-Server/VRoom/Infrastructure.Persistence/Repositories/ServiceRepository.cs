@@ -29,4 +29,12 @@ public class ServiceRepository : IServiceRepository
     {
         return await (_dbContext.Services.Select(x => x.ServiceToServiceGot())).ToListAsync();
     }
+
+    public async Task<ServiceGotDto> Update(UpdateServiceDto updateServiceDto)
+    {
+        var res =  _dbContext.Services.Update(updateServiceDto.UpdateServiceToService()).Entity;
+        await _dbContext.SaveChangesAsync();
+
+        return res.ServiceToServiceGot();
+    }
 }

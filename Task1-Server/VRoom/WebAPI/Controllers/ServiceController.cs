@@ -29,4 +29,11 @@ public class ServiceController : BaseApiController
 
         return Ok(result);
     }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdateService(UpdateServiceDto updateServiceDto)
+    {
+        var result = await _serviceRepository.Update(updateServiceDto);
+        return Ok(result);
+    }
 }

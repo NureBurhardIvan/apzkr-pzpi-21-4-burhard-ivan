@@ -1,6 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using Application.Booking.DTOs.RequestDTOs;
 using Application.Common.Interfaces.Repositories;
-using Application.Hotel.DTOs.RequestDTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,17 +15,17 @@ public class BookingController : BaseApiController
     }
     
     [HttpPost]
-    public async Task<IActionResult> Create(CreateHotelDto createHotelDto)
+    public async Task<IActionResult> Create(CreateBookingDto createBookingDto)
     {
-        await _hotelRepository.Create(createHotelDto);
+        var res = await _bookingRepository.Create(createBookingDto);
 
-        return Ok();
+        return Ok(res);
     }
     
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAllByUser(Guid userId)
     {
-        var result = await _hotelRepository.GetAll();
+        var result = await _bookingRepository.GetAllByUser(userId);
 
         return Ok(result);
     }
